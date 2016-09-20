@@ -14,6 +14,7 @@ namespace GalleryCore.Models.Entities
         [StringLength(200)]
         public string Title { get; set; }
         [Required]
+        [StringLength(450)]
         public string Url { get; set; }
         public DateTime UploadDate { get; set; }
 

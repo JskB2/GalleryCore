@@ -8,9 +8,10 @@ using GalleryCore.Models.Entities;
 namespace GalleryCore.Migrations
 {
     [DbContext(typeof(GalleryContext))]
-    partial class GalleryContextModelSnapshot : ModelSnapshot
+    [Migration("20160920083803_ChangedUrlStrLength")]
+    partial class ChangedUrlStrLength
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
